@@ -1,0 +1,81 @@
+/* SASS VARIABLES */
+
+$black: #2a2a2a;
+$blue: #55aacc;
+$darkblue: #3939fa;
+$gold: #f5e9a6;
+$green: #ccff88;
+$navWidth: 200px;
+$orange: #cc9922;
+$purple: #9977bb;
+$red: #bb4466;
+$transition: all 0.3s;
+$white: #ffffff;
+$yellow: #ffff00;
+
+/* UNIVERSAL */
+
+body {
+  background-image: url("./images/background.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+h3 {
+  margin-bottom: 40px;
+}
+
+#navbar {
+  height: 100vh;
+  width: $navWidth;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  background-color: $black;
+  overflow: auto;
+  padding: 15px;
+  text-align: center;
+  transition: $transition;
+}
+
+.engraved {
+  color: $green;
+  text-shadow: -3px -2px 5px $blue;
+  &:hover{
+    color: $purple;
+    text-decoration: none;
+  }
+}
+
+.pageLink {
+  background-color: $purple;
+  color: $green;
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
+  border: 2px solid $blue;
+  &:hover {
+    background-color: $green;
+    color: $purple;
+    border: 2px solid $red;
+  }
+}
+
+.footer {
+  color: $blue;
+  font-size: 12px;
+  text-align: center;
+}
+
+#navbarButton {
+  position: fixed;
+  top: 0;
+  left: $navWidth+1;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and ( min-width: 600px ){ }
