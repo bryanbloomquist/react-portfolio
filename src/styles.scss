@@ -1,12 +1,12 @@
 /* SASS VARIABLES */
 
 $black: #222222;
-$blue: #55aacc;
+$blue: #0088ff;
 $darkblue: #3939fa;
 $gold: #f5e9a6;
 $green: #ccff88;
 $navWidth: 200px;
-$orange: #cc9922;
+$orange: #ff8800;
 $purple: #9977bb;
 $red: #bb4466;
 $transition: all 0.3s;
@@ -21,20 +21,29 @@ body {
   background-attachment: fixed;
 }
 
-.content {
-  width: calc( 100% - $navWidth );
-  transition: $transition;
-  position: absolute;
-  top: 0;
-  right: 0;
+a:hover {
+  color: $purple;
+  text-decoration: none;
 }
 
-.contentactive {
+.engraved {
+  color: $green;
+  text-shadow: -3px -2px 5px $blue;
+}
+
+
+.pageLink {
+  background-color: $purple;
+  color: $green;
   width: 100%;
-  transition: $transition;
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-bottom: 20px;
+  float: left;
+  border: 2px solid $blue;
+  &:hover {
+    background-color: $green;
+    color: $purple;
+    border: 2px solid $red;
+  }
 }
 
 /* NAVBAR */
@@ -51,7 +60,7 @@ h3 {
   top: 0;
   left: -$navWidth;
   background-color: $black;
-  overflow: auto;
+  overflow: hidden;
   padding: 15px;
   text-align: center;
   transition: $transition;
@@ -61,7 +70,7 @@ h3 {
   position: fixed;
   transition: $transition;
   top: 0;
-  left: $navWidth;
+  left: $navWidth - 40px;
   z-index: 1;
 }
 
@@ -69,30 +78,8 @@ h3 {
   left: 0;
 }
 
-.engraved {
-  color: $green;
-  text-shadow: -3px -2px 5px $blue;
-  &:hover{
-    color: $purple;
-    text-decoration: none;
-  }
-}
-
-.pageLink {
-  background-color: $purple;
-  color: $green;
-  width: 100%;
-  margin-bottom: 20px;
-  float: left;
-  border: 2px solid $blue;
-  &:hover {
-    background-color: $green;
-    color: $purple;
-    border: 2px solid $red;
-  }
-}
-
 .footer {
+  width: 100%;
   color: $blue;
   font-size: 12px;
   text-align: center;
@@ -100,8 +87,15 @@ h3 {
 
 /* WEB DEV ALL */
 
+.webDev {
+  background-color: $black;
+  border: 3px solid $orange;
+}
 
+.webDevBody {
+  padding: 15px;
+}
 
 /* MEDIA QUERIES */
 
-@media screen and ( min-width: 600px ){ }
+@media screen and ( min-width: 600px ){}
