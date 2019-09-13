@@ -1,7 +1,7 @@
 /* SASS VARIABLES */
 
 $black: #222222;
-$blue: #0088ff;
+$blue: #55aacc;
 $darkblue: #3939fa;
 $gold: #f5e9a6;
 $green: #ccff88;
@@ -83,6 +83,26 @@ h3 {
   color: $blue;
   font-size: 12px;
   text-align: center;
+}
+
+/* TECH SKILLS */
+
+.techSkills {
+  background-color: $black;
+  border: 3px solid $orange;
+}
+
+.techSkillsBody {
+  background-color: $blue;
+  border: 3px solid $orange;
+}
+
+.skillsList {
+  border: 3px solid $orange;
+  background-color: $black;
+  color: $blue;
+  text-align: center;
+  text-shadow: -3px -2px 5px $purple;
 }
 
 /* WEB DEV ALL */

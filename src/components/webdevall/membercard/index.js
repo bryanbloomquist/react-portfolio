@@ -1,7 +1,9 @@
 import React from "react";
 
 const MemberCard = ( props ) => {
+
   return (
+
     <a 
       className = "btn pageLink p-1"
       href = { props.website }
@@ -11,7 +13,9 @@ const MemberCard = ( props ) => {
     >
       { props.name }
     </a>
+
   )
+  
 }
 
 export default MemberCard;

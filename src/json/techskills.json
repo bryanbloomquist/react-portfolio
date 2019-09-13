@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "category": "Databases",
+    "skills": [ 
+      "MongoDB",
+      "MySQL"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Languages",
+    "skills": [
+      "CSS3",
+      "HTML5",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Libraries",
+    "skills": [
+      "Bootstrap",
+      "jQuery",
+      "Mongoose",
+      "React",
+      "Sequelize"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Technologies",
+    "skills": [
+      "Express.js",
+      "Node.js"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Version Control",
+    "skills": [
+      "Git",
+      "GitHub"
+    ]
+  }
+]
