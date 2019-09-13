@@ -21,6 +21,22 @@ body {
   background-attachment: fixed;
 }
 
+.content {
+  width: calc( 100% - $navWidth );
+  transition: $transition;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contentactive {
+  width: 100%;
+  transition: $transition;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* NAVBAR */
 
 h3 {
@@ -81,6 +97,10 @@ h3 {
   font-size: 12px;
   text-align: center;
 }
+
+/* WEB DEV ALL */
+
+
 
 /* MEDIA QUERIES */
 
