@@ -21,9 +21,12 @@ body {
   background-attachment: fixed;
 }
 
-a:hover {
+a {
+  color: $green;
+  &:hover {
   color: $purple;
   text-decoration: none;
+  }
 }
 
 .engraved {
@@ -91,7 +94,22 @@ h3 {
 
 /* ABOUT ME */
 
+.aboutMe {
+  background-color: $black;
+  color: $blue;
+  border: 3px solid $orange;
+  text-align: justify;
+  text-justify: auto;
+}
 
+.bioPic {
+  max-width: 50%;
+}
+
+.contactInfo {
+  text-align: center;
+  color: $green;
+}
 
 /* TECH SKILLS */
 
