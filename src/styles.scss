@@ -53,6 +53,19 @@ a {
   border: 3px solid $orange;
 }
 
+.page {
+  max-width: calc( 100% - 200px );
+  transition: $transition;
+  position: absolute;
+  top: 0;
+  left: $navWidth;
+}
+
+.page.active {
+  max-width: 100%;
+  transition: $transition;
+}
+
 /* NAVBAR */
 
 h3 {

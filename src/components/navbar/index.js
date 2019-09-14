@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
-  const [ condition, navControl ] = useState( true );
+const NavBar = ( props ) => {
   return (
     <div>
-      <div className = { condition ? "navbar active" : "navbar" }>
+      <div className = { props.condition ? "navbar active" : "navbar" }>
         <Link to = "/" className = "animeTrigger engraved"><h3>Bryan Bloomquist</h3></Link>
         <Link to = "/portfolio" className = "animeTrigger btn pageLink">Portfolio</Link><br />
         <Link to = "/techskills" className = "animeTrigger btn pageLink">Technical Skills</Link><br />
@@ -25,12 +24,9 @@ const NavBar = () => {
         <Link to = "/webdevall" className = "animeTrigger btn pageLink">Web Dev Alliance</Link>
         <div className = "footer mt-5">Copyright &copy; 2019</div>
       </div>
-      <div className = { condition ? "navbarButton" : "navbarButton active" }>
-        <button 
-          type = "button" id = "navButton" className = "btn btn-dark" 
-          onClick = { () => navControl( !condition )}
-        >
-          <i className = { condition ? "fas fa-angle-double-left" : "fas fa-angle-double-right" }/>
+      <div className = { props.condition ? "navbarButton" : "navbarButton active" }>
+        <button type = "button" id = "navButton" className = "btn btn-dark" onClick = { () => props.navControl(  )}>
+          <i className = { props.condition ? "fas fa-angle-double-left" : "fas fa-angle-double-right" }/>
         </button>
       </div>
     </div>
