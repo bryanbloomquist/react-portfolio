@@ -2,11 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-
   const [ condition, navControl ] = useState( true );
-
   return (
-
     <div>
       <div className = { condition ? "navbar active" : "navbar" }>
         <Link to = "/" className = "animeTrigger engraved"><h3>Bryan Bloomquist</h3></Link>
@@ -37,9 +34,7 @@ const NavBar = () => {
         </button>
       </div>
     </div>
-
   )
-  
 }
 
 export default NavBar;
