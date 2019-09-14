@@ -8,12 +8,12 @@ const WebDevAll = () => {
   return (
     <Container className = "mt-5">
       <Row className = "justify-content-center">
-        <Col xs = { 12 } md = { 6 } className = "webDev">
+        <Col xs = { 12 } md = { 6 } className = "header">
           <h2 className = "engraved pt-2 pl-3 text-center">Web Dev Alliance</h2>
         </Col>
       </Row>
       <Row className = "justify-content-center">
-        <Col xs = { 12 } md = { 6 } className = "webDev webDevBody">
+        <Col xs = { 12 } md = { 6 } className = "header webDevBody">
           { members.map(( developer ) => (
             <MemberCard
               key = { developer.id }
