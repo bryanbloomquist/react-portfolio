@@ -5,13 +5,13 @@ const AboutMe = ( ) => {
   return (
     <Container className = "mt-5">
       <Row className = "justify-content-center">
-        <Col xs = { 12 } md = { 6 } className = "header">
-          <h2 clasName = "engraved pt-2 text-center">About Me</h2>
+        <Col xs = { 12 } md = { 9 } className = "header">
+          <h2 className = "engraved pt-2 text-center">About Me</h2>
         </Col>
       </Row>
       <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 8 } className = "aboutMeBody">
-          <img class = "float-right bioPic p-3" src = "../images/biopic.png" alt = "bryan bloomquist" />
+        <Col xs = { 12 } sm = { 9 } className = "aboutMeBody">
+          <img class = "float-right bioPic p-3" src = "./images/biopic.png" alt = "bryan bloomquist" />
           <p>
             I enlisted in the Army Reserves after high school so I could go to college and get a higher education.  I changed my major three times because at 18 I had no idea what I wanted to do with my life, and before I could graduate my reserve unit was activated and I was sent to Iraq.  I spent almost all of 2003 driving a fuel truck through Iraq and Kuwait and also earned certification as a combat lifesaver. After I got home from the war I finished my bachelor’s degree while working full time as a letter carrier at the United States Postal Service.
           </p>
@@ -24,10 +24,10 @@ const AboutMe = ( ) => {
         </Col>
       </Row>
       <Row className = "justify-content-center">
-        <Col lg = { 6 } className = "contactInfo engraved p-3">
+        <Col xs = { 12 } lg = { 6 } className = "contactInfo engraved p-3">
           <h5>Phone: <a href = "tel:1-612-226-8339">612-226-8339</a></h5>
         </Col>
-        <Col lg = { 6 } className = "contactInfo engraved p-3">
+        <Col xs = { 12 } lg = { 6 } className = "contactInfo engraved p-3">
           <h5>email: <a href = "mailto:bmbloomquist@gmail.com" title = "Email" target = "_top">bmbloomquist@gmail.com</a></h5>
         </Col>
       </Row>

@@ -13,7 +13,7 @@ const TechSkills = ( ) => {
         </Col>
       </Row>
       <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 9 } className = "techSkillsBody">
+        <Col xs = { 12 } sm = { 9 } className = "techSkills">
           { skills.map(( skill ) => (
             <SkillCard
               key = { skill.id }
