@@ -10,11 +10,11 @@ import AllApps from "./components/allapps";
 import "./styles.scss";
 
 class App extends Component {
-  constructor( props ) {
-    super( props );
-    this.navControl.bind( this );
+  constructor( props, context ) {
+    super( props, context );
+    this.navControl = this.navControl.bind( this );
+    this.state = { condition: true };
   }
-  state = { condition: true }
   navControl = () => this.setState({ condition: !this.state.condition })
   render() {
     return (

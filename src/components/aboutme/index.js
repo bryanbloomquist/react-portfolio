@@ -4,14 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 const AboutMe = ( props ) => {
   console.log( props.condition );
   return (
-    <Container className = { props.condition ? "page mt-5" : "page.active mt-5" }>
+    <Container className = { props.condition ? "page mt-5" : "page fullPage mt-5" }>
+    {/* <Container className = "page mt-5"> */}
       <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 9 } className = "header">
+        <Col xs = { 12 } sm = { 8 } className = "header">
           <h2 className = "engraved pt-2 text-center">About Me</h2>
         </Col>
       </Row>
       <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 9 } className = "header aboutMe p-3">
+        <Col xs = { 12 } sm = { 8 } className = "header aboutMe p-3">
           <img className = "float-right bioPic p-3 img-fluid" src = "assets/images/biopic.png" alt = "bryan bloomquist" />
           <p>
             I enlisted in the Army Reserves after high school so I could go to college because that is what you were supposed to do.  I changed majors three times because at 18 I had no idea what I wanted to do with my life, and before I could graduate I was activated and sent to Iraq.  I spent most of 2003 driving a fuel truck through Iraq and Kuwait.
@@ -28,7 +29,7 @@ const AboutMe = ( props ) => {
         <Col xs = { 12 } sm = { 4 } className = "header contactInfo engraved p-3">
           <h5>Phone: <a href = "tel:1-612-226-8339">612-226-8339</a></h5>
         </Col>
-        <Col xs = { 12 } sm = { 5 } className = "header contactInfo engraved p-3">
+        <Col xs = { 12 } sm = { 4 } className = "header contactInfo engraved p-3">
           <h5>email: <a href = "mailto:bmbloomquist@gmail.com" title = "Email" target = "_top">bmbloomquist @ gmail.com</a></h5>
         </Col>
       </Row>

@@ -9,7 +9,7 @@ $navWidth: 200px;
 $orange: #ff8800;
 $purple: #9977bb;
 $red: #bb4466;
-$transition: all 0.3s;
+$transition: all 0.5s;
 $white: #ffffff;
 $yellow: #ffff00;
 
@@ -54,16 +54,15 @@ a {
 }
 
 .page {
-  max-width: calc( 100% - 200px );
+  max-width: calc( 100% - #{ $navWidth });
   transition: $transition;
   position: absolute;
   top: 0;
-  left: $navWidth;
+  right: 0;
 }
 
-.page.active {
+.fullPage {
   max-width: 100%;
-  transition: $transition;
 }
 
 /* NAVBAR */

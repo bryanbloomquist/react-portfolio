@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import WebDevJSON from "../../json/webdev.json";
 import MemberCard from "./membercard";
 
-const WebDevAll = () => {
+const WebDevAll = ( props ) => {
   const [ members ] = useState( WebDevJSON );
   return (
     <Container className = "mt-5">
