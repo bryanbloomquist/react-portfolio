@@ -56,14 +56,15 @@ a {
 
 .open {
   width: calc( 100% - #{ $navWidth });
+  -webkit-transition: $transition;
   transition: $transition;
   position: absolute;
   left: $navWidth;
-  // right: $navWidth;
 }
 
 .closed {
   width: 100%;
+  -webkit-transition: $transition;
   transition: $transition;
 }
 
@@ -110,6 +111,132 @@ h3 {
   text-align: center;
 }
 
+/* PORTFOLIO */
+
+.portfolio {
+  background-color: $blue;
+  color: $green;
+  border: 3px solid $orange;
+}
+
+.imgPortfolio {
+  width: 100%;
+  border: 3px solid $green;
+}
+
+.hovereffect {
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
+}
+
+.hovereffect .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+  display:block;
+  position:relative;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color:#5ac;
+  text-align:center;
+  position:relative;
+  font-size:17px;
+  background:rgba(0,0,0,0.6);
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  padding:20px;
+}
+
+.hovereffect p {
+  display: inline-block;
+  clear: both;
+  font-size: 12px;
+  border: 2px solid $green;
+  background-color: $red;
+  color: $green;
+  padding: 5px 10px;
+  min-width: 45%;
+  max-width: 90%;
+}
+
+.hovereffect a.info {
+  text-decoration:none;
+  display:inline-block;
+  color: $green;
+  border: 2px solid $blue;
+  background-color: $purple;
+  opacity:0;
+  filter:alpha(opacity=0);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  margin: 5px;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow:0 0 5px $white;
+  background-color: $green;
+  border: 2px solid $red;
+  color: $purple;
+}
+
+.hovereffect:hover img {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+  
+.hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity:1;
+  filter:alpha(opacity=100);
+  -ms-transform:translatey(0);
+  -webkit-transform:translatey(0);
+  transform:translatey(0);
+}
+
+.ghub {
+  background-color: $purple;
+  color: $green;
+  border: 2px solid $blue;
+  &:hover {
+    background-color: $green;
+    color: $purple;
+    border: 2px solid $red;
+  }
+}
+
+.hiddenLink {
+  color: #223;
+  float: right;
+}
+
 /* ABOUT ME */
 
 .aboutMe {
@@ -134,7 +261,6 @@ h3 {
 .techSkills {
   background-color: $blue;
   border: 3px solid $orange;
-
 }
 
 .skillImage {
