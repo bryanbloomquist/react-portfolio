@@ -6,19 +6,19 @@ import SkillCard from "./skillcard";
 const TechSkills = ( props ) => {
   const [ skills ] = useState( TechSkillsJSON );
   return (
-    <Container className = "mt-5">
-      <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 8 } className = "header">
+    <Container fluid = { true } className = { props.condition ? "mt-5 open" : "mt-5 closed" }>
+      <Row className = "justify-content-center mx-1">
+        <Col xs = { 12 } lg = { 8 } className = "header">
           <h2 className = "engraved pt-2 pl-3 text-center">Technical Skills</h2>
         </Col>
       </Row>
-      <Row className = "justify-content-center">
-        <Col xs = { 12 } sm = { 8 } className = "techSkills">
+      <Row className = "justify-content-center mx-1 mb-5">
+        <Col xs = { 12 } lg = { 8 } className = "techSkills">
           { skills.map(( skill ) => (
             <SkillCard
               key = { skill.id }
-              category = { skill.category }
-              skills = { skill.skills }
+              name = { skill.name }
+              image = { skill.image }
             />
           ))}
         </Col>

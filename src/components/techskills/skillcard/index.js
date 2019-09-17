@@ -3,10 +3,14 @@ import { Col } from "react-bootstrap";
 
 const SkillCard = ( props ) => {
   return (
-  <Col xs = { 12 } md = { 6 } className = "float-left">
-    <div className = "header skillsList m-3 p-3">
-      <h4 className = "engraved">{ props.category }</h4>
-      { props.skills.map(( skills ) => <h5>{ skills }</h5> )}
+  <Col xs = {6} md = { 4 } xl = { 3 } className = "float-left p-1">
+    <div className = "header my-1 p-3">
+      <h4 className = "engraved">{ props.name }</h4>
+      <img
+        src = { props.image }
+        alt = { props.name } 
+        className = "skillImage"
+      />
     </div>
   </Col>
   )
