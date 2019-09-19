@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "My Little Pony Math Rescue",
-    "image": "assets/images/molly-pony.png",
+    "image": "/images/molly-pony.png",
     "website": "https://molly-pony.herokuapp.com/",
     "github": "https://github.com/bryanbloomquist/molly-pony",
     "skills": [
@@ -14,7 +14,7 @@
   },{
     "id": 2,
     "title": "Choose Your Own Adventure",
-    "image": "assets/images/cyoa.png",
+    "image": "/images/cyoa.png",
     "website": "https://cyoa-bc.herokuapp.com/",
     "github": "https://github.com/bryanbloomquist/group-project-2",
     "skills": [
@@ -31,7 +31,7 @@
   },{
     "id": 3,
     "title": "Dungeons and Dragons Hangman",
-    "image": "assets/images/hangman.png",
+    "image": "/images/hangman.png",
     "website": "https://bryanbloomquist.github.io/word-guess-game",
     "github": "https://github.com/bryanbloomquist/word-guess-game",
     "skills": [
@@ -42,7 +42,7 @@
   },{
     "id": 4,
     "title": "Gimlet Podcast Scraper",
-    "image": "assets/images/gimlet.PNG",
+    "image": "/images/gimlet.PNG",
     "website": "https://gimlet.herokuapp.com",
     "github": "https://github.com/bryanbloomquist/news-scraper",
     "skills": [
@@ -59,7 +59,7 @@
   },{
     "id": 5,
     "title": "Google Book Search",
-    "image": "assets/images/google-book.png",
+    "image": "/images/google-book.png",
     "website": "https://react-google.herokuapp.com",
     "github": "https://github.com/bryanbloomquist/google-book-search",
     "skills": [
@@ -71,7 +71,7 @@
   },{
     "id": 6,
     "title": "Bamazon Store Front",
-    "image": "assets/images/bamazon.png",
+    "image": "/images/bamazon.png",
     "website": "https://github.com/bryanbloomquist/bamazon",
     "github": "https://github.com/bryanbloomquist/bamazon",
     "skills": [

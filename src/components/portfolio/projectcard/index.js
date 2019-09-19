@@ -6,7 +6,7 @@ const ProjectCard = ( props ) => {
   <Col xs = { 12 } md = { 6 } xl = { 4 } className = "p-2 float-left">
     <div className = "hovereffect m-1">
       <img
-        src = { props.image }
+        src = { window.location.origin + props.image }
         alt = { props.title }
         className = "imgResponsive imgPortfolio"
       />

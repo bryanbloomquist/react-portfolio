@@ -7,7 +7,7 @@ const SkillCard = ( props ) => {
     <div className = "header my-1 p-3">
       <h4 className = "engraved">{ props.name }</h4>
       <img
-        src = { props.image }
+        src = { window.location.origin + props.image }
         alt = { props.name } 
         className = "skillImage"
       />
