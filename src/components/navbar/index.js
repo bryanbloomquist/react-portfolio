@@ -18,7 +18,7 @@ const NavBar = ( props ) => {
         <a className = "btn pageLink p-1" href = "mailto:bmbloomquist@gmail.com?Subject=I%20Want%20To%20Hire%20You" title = "Email" target = "_top">
           <i className = "fas fa-envelope-square fa-2x" />
         </a><br />
-        <a className = "btn pageLink p-1" href = "./assets/Resume.pdf" title = "Resume" target = "_blank" rel = "noopener noreferrer">
+        <a className = "btn pageLink p-1" href = "/Resume.pdf" title = "Resume" target = "_blank" rel = "noopener noreferrer">
           <i className = "far fa-file fa-2x" />
         </a><br />
         <Link to = "/webdevall" className = "animeTrigger btn pageLink">Web Dev Alliance</Link>
