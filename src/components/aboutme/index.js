@@ -12,7 +12,7 @@ const AboutMe = ( props ) => {
       </Row>
       <Row className = "justify-content-center mx-1">
         <Col xs = { 12 } lg = { 8 } className = "header aboutMe p-3">
-          <img className = "float-right bioPic p-3 img-fluid" src = { window.location.origin + "/images/biopic.png" } alt = "bryan bloomquist" />
+          <img className = "float-right bioPic p-3 img-fluid" src = "images/biopic.png" alt = "bryan bloomquist" />
           <p>
             I enlisted in the Army Reserves after high school so I could go to college because that is what you were supposed to do.  I changed majors three times because at 18 I had no idea what I wanted to do with my life, and before I could graduate I was activated and sent to Iraq.  I spent most of 2003 driving a fuel truck through Iraq and Kuwait.
           </p>
