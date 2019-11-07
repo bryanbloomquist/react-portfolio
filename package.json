@@ -11,7 +11,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.0.1"
   },
-  "homepage": "https://github.com/bryanbloomquist/react-portfolio/",
+  "homepage": "https://bryanbloomquist.github.io/react-portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
